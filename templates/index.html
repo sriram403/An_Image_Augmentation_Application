@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preprocess Form</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <h1><b>IMAGE AUGMENTATION🐱‍💻</b></h1>
+    <form action="/preprocess" method="post">
+        <label for="I_N"><b>Images_Needed(per image)🖼:</b></label>
+        <input type="number" name="I_N" id="I_N" value="1" min="0"><br>
+
+        <label for="H_F"><b>Horizontal_Flip🙇‍♀️:</b></label>
+        <input type="number" name="H_F" id="H_F" value="1" min="0" max="1" step="0.1"><br>
+
+        <label for="R_B_C"><b>RandomBrightnessContrast🌞:</b></label>
+        <input type="number" name="R_B_C" id="R_B_C" value="1" min="0" max="1" step="0.1"><br>
+
+        <label for="R_G"><b>RandomGamma💚:</b></label>
+        <input type="number" name="R_G" id="R_G" value="1" min="0" max="1" step="0.1"><br>
+
+        <label for="RGB_S"><b>RGBShift🚥:</b></label>
+        <input type="number" name="RGB_S" id="RGB_S" value="1" min="0" max="1" step="0.1"><br>
+
+        <label for="V_F"><b>VerticalFlip🥂:</b></label>
+        <input type="number" name="V_F" id="V_F" value="1" min="0" max="1" step="0.1"><br>
+
+        <label for="G_N"><b>GaussNoise🌫:</b></label>
+        <input type="number" name="G_N" id="G_N" value="1" min="0" max="1" step="0.1"><br>
+
+        <label for="C_J"><b>ColorJitter🌟:</b></label>
+        <input type="number" name="C_J" id="C_J" value="1" min="0" max="1" step="0.1"><br>
+
+        <label for="S_S_R"><b>ShiftScaleRotate🔍:</b></label>
+        <input type="number" name="S_S_R" id="S_S_R" value="0" min="0" max="1" step="0.1"><br>
+
+        <label for="D"><b>Write the Path Directory of Image📂:</b></label>
+        <input type="text" name="D" id="D"><br>
+
+        <input type="submit" value="Preprocess">
+    </form>
+</body>
+</html>

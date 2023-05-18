@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Augmentation Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Augmentation Result (sample) 🐱‍🐉</h1>
+        <p class="message">Images augmented successfully!💘</p>
+        <p class="image-count">Total augmented images You have (per one image): {{ total_image//non_aug_images}} 💌</p>
+        <p class="image-count">Total augmented images You have in the directory: {{ total_image}} 🖼</p>
+        <p class="Directory message">Check this directory: {{Directory}} 💽</p>
+    </div>
+</body>
+</html>
